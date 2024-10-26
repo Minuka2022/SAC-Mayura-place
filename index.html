@@ -34,6 +34,20 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
     <!-- Audio Css File -->
 	<link rel="stylesheet" href="css/plyr.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- SweetAlert CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+<!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+<!-- SweetAlert JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 </head>
@@ -55,7 +69,7 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
+						<h3 style="color:white;">St'Anthony Church</h3>
 					</a>
 					<!-- Logo End -->
 
@@ -63,38 +77,22 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul class="sub-menu">
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Image</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
-                                    </ul>
-                                </li>                                
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="sermons-single.html">Sermons Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="campaign.html">Campaigns</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="campaign-single.html">Campaign Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="ministries.html">Ministries</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="ministry-single.html">Ministries Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="pastor.html">pastor</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item "><a class="nav-link" href="index.html">Home</a>
+                                   
+                                </li>       
+                                
+                                <li class="nav-item "><a class="nav-link" href="gallery.html">Gallery</a>
+                                   
+                                </li>     
+                               
+                                
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                                 <li class="nav-item highlighted-menu"><a class="nav-link" href="#">donate now</a></li>                               
                             </ul>
                         </div>
                         <!-- Let’s Start Button Start -->
                         <div class="header-btn d-inline-flex">
-                            <a href="#" class="btn-default">donate now</a>
+                            <a href="contact.html" class="btn-default">donate now</a>
                         </div>
                         <!-- Let’s Start Button End -->
 					</div>
@@ -117,15 +115,15 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">make a difference today</h3>
-                            <h1 class="text-anime-style-2" data-cursor="-opaque">Loving god, loving other and serving the world !</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">Experience God's love and grace in a welcoming community where faith grows, hope thrives, and everyone is cherished.</p>
+                            <h1 class="text-anime-style-2" data-cursor="-opaque">Rebuild with Us Renewing Faith, Brick by Brick</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Join hands with our community to create a place of comfort, peace, and inspiration. Your donation can make this vision a reality.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Hero Content Body Start -->
                         <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="#" class="btn-default"><span>join in person</span></a>
-                            <a href="#" class="btn-default btn-highlighted"><span>donate now</span></a>
+                            
+                            <a href="contact.html" class="btn-default btn-highlighted"><span>Contact now</span></a>
                         </div>
                         <!-- Hero Content Body End -->
                     </div>
@@ -139,27 +137,7 @@
 	</div>
 	<!-- Hero Section End -->
 
-    <!-- Our Scrolling Ticker Section Start -->
-    <div class="our-scrolling-ticker">
-        <!-- Scrolling Ticker Start -->
-        <div class="scrolling-ticker-box">
-            <div class="scrolling-content">
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-            </div>
-
-            <div class="scrolling-content">
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-                <span><img src="images/icon-sparkles.svg" alt="">Love Your Neighbor as yourself</span>
-            </div>
-        </div>
-    </div>
+   
 	<!-- Scrolling Ticker Section End -->
 
     <!-- About Us Section Start -->
@@ -171,7 +149,7 @@
                     <div class="about-image">
                         <div class="about-img-1">
                             <figure class="image-anime reveal">
-                                <img src="images/about-us-img-1.jpg" alt="">
+                                <img src="images/Church-new.PNG" alt="">
                             </figure>
                         </div>
 
@@ -190,9 +168,9 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">about us</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Faith, hope, and love in <span>action every day</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">We are a vibrant community of believers dedicated to worship, fellowship, and service. Our mission is to share God's love, grow in faith, and make a positive impact in the world through compassionate outreach and meaningful connections.</p>
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">Our church is a welcoming place where everyone can find support, inspiration, and a sense of belonging. Together, we strive to live out our faith and make a difference.</p>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">About St. Anthony's Church, Mayura Place</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Since 1969, St. Anthony’s Church in Mayura Place has been a beacon of faith, unity, and community service for all who seek spiritual guidance. Our journey began with the vision of Rt. Rev. Msgr. Manik Muthukumar, who saw the need for a new place of worship for parishioners living far from St. Lawrence's Church in Wellawatte. Built to honor St. Anthony, our church opened its doors in 1991, providing a dedicated place of worship for the Tamil-speaking Catholic community and the surrounding neighborhood.</p>
+                           
                         </div>
                         <!-- Section Title End -->
 
@@ -204,7 +182,8 @@
                                     <img src="images/icon-about-list-1.svg" alt="">
                                 </div>
                                 <div class="about-list-item-content">
-                                    <h3>share god's love</h3>
+                                    <h3 style="margin-bottom:10px">Our Mission</h3>
+                                    <p>A welcoming space for worship and unity among all faiths.</p>
                                 </div>
                             </div>
                             <!-- About List Item End -->
@@ -215,7 +194,8 @@
                                     <img src="images/icon-about-list-2.svg" alt="">
                                 </div>
                                 <div class="about-list-item-content">
-                                    <h3>foster spiritual growth</h3>
+                                    <h3 style="margin-bottom:10px">Our Legacy</h3>
+                                    <p>A welcoming space for worship and unity among all faiths.</p>
                                 </div>
                             </div>
                             <!-- About List Item End -->
@@ -226,7 +206,9 @@
                                     <img src="images/icon-about-list-3.svg" alt="">
                                 </div>
                                 <div class="about-list-item-content">
-                                    <h3>serve our community</h3>
+                                    <h3 style="margin-bottom:10px">Renewal Project</h3>
+                                    <p>Planning a larger, modern space to serve future generations.</p>
+                                    
                                 </div>
                             </div>
                             <!-- About List Item End -->
@@ -237,7 +219,8 @@
                                     <img src="images/icon-about-list-4.svg" alt="">
                                 </div>
                                 <div class="about-list-item-content">
-                                    <h3>build strong relationships</h3>
+                                    <h3 style="margin-bottom:10px">How You Can Help</h3>
+                                    <p>Support the mission to strengthen our church community.</p> 
                                 </div>
                             </div>
                             <!-- About List Item End -->
@@ -247,7 +230,7 @@
 
                         <!-- About Us Footer Start -->
                         <div class="about-us-footer wow fadeInUp" data-wow-delay="1s">
-                            <a href="#" class="btn-default">read more about us</a>
+                            <a href="contact.html" class="btn-default">Our mission</a>
                         </div>
                         <!-- About Us Footer End -->
                     </div>
@@ -259,147 +242,7 @@
     <!-- About Us Section End -->
 
     <!-- Join Worship Section Start -->
-    <div class="join-worship">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">worship with us</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Join us on Sunday at <span>8:00 & 9:00 AM</span></h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Highlighted Worship Item Start -->
-                    <div class="highlighted-worship-item wow fadeInUp">
-                        <!-- Highlighted Worship Featured Image Start -->
-                        <div class="highlighted-worship-image">
-                            <figure>
-                                <a href="#" class="image-anime" data-cursor-text="View">
-                                    <img src="images/join-worship-img-1.jpg" alt="">
-                                </a>
-                            </figure>
-                        </div>
-                        <!-- Highlighted Worship Featured Image End -->
-
-                        <!-- Highlighted Worship Body Start -->
-                        <div class="highlighted-worship-body">
-                            <!-- Highlighted Worship Content Start -->
-                            <div class="highlighted-worship-content">
-                                <h3>youth worship</h3>
-                                <p>Engaging teens in faith, fellowship, growth.</p>
-                            </div>
-                            <!-- Highlighted Worship Content End -->
-                            <div class="highlighted-worship-btn">
-                                <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Highlighted Worship Body End -->
-                    </div>
-                    <!-- Highlighted Worship Item End -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="worship-box">
-                        <!-- Worship Item Start -->
-                        <div class="worship-item wow fadeInUp" data-wow-delay="0.25s">
-                            <!-- Worship Image Start -->
-                            <div class="worship-image">
-                                <figure>
-                                    <a href="#" class="image-anime" data-cursor-text="View">
-                                        <img src="images/join-worship-img-2.jpg" alt="">
-                                    </a>
-                                </figure>
-                            </div>
-                            <!-- Worship Image End -->
-
-                            <!-- Worship Body Start -->
-                            <div class="worship-body">
-                                <!-- Worship Content Start -->
-                                <div class="worship-content">
-                                    <h3>children's worship</h3>
-                                    <p>Fun, faith-filled worship for kids ages 4-12.</p>
-                                </div>
-                                <!-- Worship Content End -->
-
-                                <!-- Worship Btn Start -->
-                                <div class="worship-btn">
-                                    <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                                </div>
-                                <!-- Worship Btn End -->
-                            </div>
-                            <!-- Worship Body End -->
-                        </div>
-                        <!-- Worship Item End -->
-
-                        <!-- Worship Item Start -->
-                        <div class="worship-item wow fadeInUp" data-wow-delay="0.5s">
-                            <!-- Worship Image Start -->
-                            <div class="worship-image">
-                                <figure>
-                                    <a href="#" class="image-anime" data-cursor-text="View">
-                                        <img src="images/join-worship-img-3.jpg" alt="">
-                                    </a>
-                                </figure>
-                            </div>
-                            <!-- Worship Image End -->
-
-                            <!-- Worship Body Start -->
-                            <div class="worship-body">
-                                <!-- Worship Content Start -->
-                                <div class="worship-content">
-                                    <h3>sunday school worship </h3>
-                                    <p>Learning and worship for all ages.</p>
-                                </div>
-                                <!-- Worship Content End -->
-
-                                <!-- Worship Btn Start -->
-                                <div class="worship-btn">
-                                    <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                                </div>
-                                <!-- Worship Btn End -->
-                            </div>
-                            <!-- Worship Body End -->
-                        </div>
-                        <!-- Worship Item End -->
-
-                        <!-- Worship Item Start -->
-                        <div class="worship-item wow fadeInUp" data-wow-delay="0.75s">
-                            <!-- Worship Image Start -->
-                            <div class="worship-image">
-                                <figure>
-                                    <a href="#" class="image-anime" data-cursor-text="View">
-                                        <img src="images/join-worship-img-4.jpg" alt="">
-                                    </a>
-                                </figure>
-                            </div>
-                            <!-- Worship Image End -->
-
-                            <!-- Worship Body Start -->
-                            <div class="worship-body">
-                                <!-- Worship Content Start -->
-                                <div class="worship-content">
-                                    <h3>children's worship</h3>
-                                    <p>Fun, faith-filled worship for kids ages 4-12.</p>
-                                </div>
-                                <!-- Worship Content End -->
-
-                                <!-- Worship Btn Start -->
-                                <div class="worship-btn">
-                                    <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                                </div>
-                                <!-- Worship Btn End -->
-                            </div>
-                            <!-- Worship Body End -->
-                        </div>
-                        <!-- Worship Item End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Join Worship Section End -->
 
     <!-- Our Counter Section Start -->
@@ -411,71 +254,71 @@
                     <div class="counter-item">
                         <!-- Counter Title Start -->
                         <div class="counter-title">
-                            <h2><span class="counter">350</span>+</h2>
+                            <h2><span class="counter">50</span>+</h2>
                         </div>
-                        <!-- Counter Title End -->                     
-
+                        <!-- Counter Title End -->
+    
                         <!-- Counter Content Start -->
                         <div class="counter-content">
-                            <h3>oldest member</h3>
-                            <p>Our oldest member is Mary Thompson, who is 95 years old and has been attending since 1945.</p>
+                            <h3>Years of Faith</h3>
+                            <p>St. Anthony's Church has been a place of worship for over 50 years, bringing the community together.</p>
                         </div>
                         <!-- Counter Content End -->
                     </div>
                     <!-- Counter Item End -->
                 </div>
-
+    
                 <div class="col-lg-3 col-md-6">
                     <!-- Counter Item Start -->
                     <div class="counter-item">
                         <!-- Counter Title Start -->
                         <div class="counter-title">
-                            <h2><span class="counter">98</span>+</h2>
+                            <h2><span class="counter">8</span>+</h2>
                         </div>
-                        <!-- Counter Title End -->                     
-
+                        <!-- Counter Title End -->
+    
                         <!-- Counter Content Start -->
-                        <div class="counter-content">                            
-                            <h3>youth retreats</h3>
-                            <p>Our oldest member is Mary Thompson, who is 95 years old and has been attending since 1945.</p>
+                        <div class="counter-content">
+                            <h3>Parish Priests</h3>
+                            <p>Led by 8 dedicated priests, each bringing their unique leadership and spiritual guidance.</p>
                         </div>
                         <!-- Counter Content End -->
                     </div>
                     <!-- Counter Item End -->
                 </div>
-
+    
                 <div class="col-lg-3 col-md-6">
                     <!-- Counter Item Start -->
                     <div class="counter-item">
                         <!-- Counter Title Start -->
                         <div class="counter-title">
-                            <h2><span class="counter">148</span>+</h2>                            
+                            <h2><span class="counter">7</span>+</h2>
                         </div>
-                        <!-- Counter Title End -->                     
-
+                        <!-- Counter Title End -->
+    
                         <!-- Counter Content Start -->
                         <div class="counter-content">
-                            <h3>tech workshops</h3>
-                            <p>Our oldest member is Mary Thompson, who is 95 years old and has been attending since 1945.</p>
+                            <h3>Parish Council Members</h3>
+                            <p>Honoring the 7 members who served selflessly to support the church's mission and community outreach.</p>
                         </div>
                         <!-- Counter Content End -->
                     </div>
                     <!-- Counter Item End -->
                 </div>
-
+    
                 <div class="col-lg-3 col-md-6">
                     <!-- Counter Item Start -->
                     <div class="counter-item">
                         <!-- Counter Title Start -->
                         <div class="counter-title">
-                            <h2><span class="counter">58</span>+</h2>
+                            <h2><span class="counter">100</span>+</h2>
                         </div>
-                        <!-- Counter Title End -->                     
-
+                        <!-- Counter Title End -->
+    
                         <!-- Counter Content Start -->
                         <div class="counter-content">
-                            <h3>christmas concert</h3>
-                            <p>Our oldest member is Mary Thompson, who is 95 years old and has been attending since 1945.</p>
+                            <h3>Community Events</h3>
+                            <p>Over 100 community gatherings, celebrations, and retreats have strengthened our church bonds.</p>
                         </div>
                         <!-- Counter Content End -->
                     </div>
@@ -484,6 +327,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Our Counter Section End -->
 
     <!-- Our Mission Section Start -->
@@ -501,14 +345,14 @@
 
                         <!-- Mission Content Body Start -->
                         <div class="mission-content-body">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.25s">Our mission is to share God's love, foster spiritual growth, and serve our community with compassion and purpose.</h3>
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">Our mission is to share God's love and grace by fostering spiritual growth, serving our community with compassion, and building meaningful relationships. We are dedicated to living out our faith through worship, outreach, and impactful service.</p>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.25s">At St. Anthony’s Church, we are committed to providing a sacred space where all can come together in faith, worship, and support. We aim to foster a welcoming environment that strengthens our community and promotes unity across generations.</h3>
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">Our mission for this renovation is to build a larger, inclusive sanctuary that meets the growing needs of our congregation, allowing us to continue our spiritual and community work for decades to come.</p>
                         </div>
                         <!-- Mission Content Body End -->
 
                         <!-- Mission Content Footer Start -->
                         <div class="mission-content-footer wow fadeInUp" data-wow-delay="0.75s">
-                            <a href="#" class="btn-default">contact now</a>
+                            <a href="contact.html" class="btn-default">contact now</a>
                         </div>
                         <!-- Mission Content Footer End -->
                     </div>
@@ -520,7 +364,7 @@
                         <!-- Mission Image Start -->
                         <div class="mission-img">
                             <figure class="image-anime reveal">
-                                <img src="images/mission-image.jpg" alt="">
+                                <img src="images/church inside.jpg" alt="">
                             </figure>
                         </div>
                         <!-- Mission Image End -->
@@ -538,547 +382,107 @@
     </div>
     <!-- Our Mission Section End -->
 
-    <!-- Our Services Section Start -->
-    <div class="our-services">
-        <div class="container">
-            <div class="row section-row">
-                <!-- Section Title Start -->
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">services</h3>
-                    <h2 class="text-anime-style-2" data-cursor="-opaque">Loving god, helping others and serving the <span>world together</span></h2>
-                </div>
-                <!-- Section Title End -->
-            </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp">
-                        <!-- Icon Box Start -->
-                        <div class="icon-box">
-                            <img src="images/icon-service-1.svg" alt="">
-                        </div>
-                        <!-- Icon Box End -->
-
-                        <!-- Service Body Start -->
-                        <div class="service-body">
-                            <p>Compassionate support for grief, relationships, and personal struggles. Join our monthly groups or schedule counseling.</p>
-                        </div>
-                        <!-- Service Body End -->
-
-                        <!-- Service Footer Start -->
-                        <div class="service-footer">
-                            <div class="service-content">
-                                <h3>support groups</h3>
-                            </div>
-                            <div class="service-btn">
-                                <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Service Footer End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Icon Box Start -->
-                        <div class="icon-box">
-                            <img src="images/icon-service-2.svg" alt="">
-                        </div>
-                        <!-- Icon Box End -->
-
-                        <!-- Service Body Start -->
-                        <div class="service-body">
-                            <p>Join us for special events, including holiday services, picnics, and community fundraisers throughout the year.</p>
-                        </div>
-                        <!-- Service Body End -->
-
-                        <!-- Service Footer Start -->
-                        <div class="service-footer">
-                            <div class="service-content">
-                                <h3>special events</h3>
-                            </div>
-                            <div class="service-btn">
-                                <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Service Footer End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Icon Box Start -->
-                        <div class="icon-box">
-                            <img src="images/icon-service-3.svg" alt="">
-                        </div>
-                        <!-- Icon Box End -->
-
-                        <!-- Service Body Start -->
-                        <div class="service-body">
-                            <p>Join our online services for live streams of Sunday worship, virtual Bible studies, and interactive prayer meetings from anywhere.</p>
-                        </div>
-                        <!-- Service Body End -->
-
-                        <!-- Service Footer Start -->
-                        <div class="service-footer">
-                            <div class="service-content">
-                                <h3>online services</h3>
-                            </div>
-                            <div class="service-btn">
-                                <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Service Footer End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
-                        <!-- Icon Box Start -->
-                        <div class="icon-box">
-                            <img src="images/icon-service-4.svg" alt="">
-                        </div>
-                        <!-- Icon Box End -->
-
-                        <!-- Service Body Start -->
-                        <div class="service-body">
-                            <p>Receive compassionate pastoral care through one-on-one counseling  and  visits, addressing spiritual needs and personal challenges with care.</p>
-                        </div>
-                        <!-- Service Body End -->
-
-                        <!-- Service Footer Start -->
-                        <div class="service-footer">
-                            <div class="service-content">
-                                <h3>pastoral care</h3>
-                            </div>
-                            <div class="service-btn">
-                                <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Service Footer End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Services Section End -->
-
-    <!-- Service Ticker Start -->
-	<div class="service-ticker">
-		<div class="scrolling-ticker">
-            <div class="scrolling-ticker-box">
-                <div class="scrolling-content">
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>					
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>				
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>				
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>				
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>				
-                </div>
-
-                <div class="scrolling-content">
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>					
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>				
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>				
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>				
-                    <span><img src="images/icon-asterisk.svg" alt="">Hope Of All</span>
-                </div>
-            </div>
-        </div>
-	</div>
-	<!-- Service Ticker End -->
-
-    <!-- Our Ministries Section Start -->
-    <div class="our-ministries">
-        <div class="container">
-            <div class="row section-row">
-                <!-- Section Title Start -->
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">ministries</h3>
-                    <h2 class="text-anime-style-2" data-cursor="-opaque">Our Latest <span>Ministries</span></h2>
-                </div>
-                <!-- Section Title End -->
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <!-- Ministries Item Start -->
-                    <div class="ministries-item wow fadeInUp">
-                        <!-- Ministries Image Start -->
-                        <div class="ministries-image" data-cursor-text="View">
-                            <a href="#">
-                                <figure>
-                                    <img src="images/ministries-img-1.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Ministries Image End -->
-
-                        <!-- Ministries Content Start -->
-                        <div class="ministries-content">
-                            <h3>Children's</h3>
-                        </div>
-                        <!-- Ministries Content End -->
-
-                        <!-- Ministries Btn Start -->
-                        <div class="ministries-btn">
-                            <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Ministries Btn End -->
-                    </div>
-                    <!-- Ministries Item End -->
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Ministries Item Start -->
-                    <div class="ministries-item wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Ministries Image Start -->
-                        <div class="ministries-image" data-cursor-text="View">
-                            <a href="#">
-                                <figure>
-                                    <img src="images/ministries-img-2.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Ministries Image End -->
-
-                        <!-- Ministries Content Start -->
-                        <div class="ministries-content">
-                            <h3>youth</h3>
-                        </div>
-                        <!-- Ministries Content End -->
-
-                        <!-- Ministries Btn Start -->
-                        <div class="ministries-btn">
-                            <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Ministries Btn End -->
-                    </div>
-                    <!-- Ministries Item End -->
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Ministries Item Start -->
-                    <div class="ministries-item wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Ministries Image Start -->
-                        <div class="ministries-image" data-cursor-text="View">
-                            <a href="#">
-                                <figure>
-                                    <img src="images/ministries-img-3.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Ministries Image End -->
-
-                        <!-- Ministries Content Start -->
-                        <div class="ministries-content">
-                            <h3>prayer</h3>
-                        </div>
-                        <!-- Ministries Content End -->
-
-                        <!-- Ministries Btn Start -->
-                        <div class="ministries-btn">
-                            <a href="#" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Ministries Btn End -->
-                    </div>
-                    <!-- Ministries Item End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="our-ministries-footer wow fadeInUp" data-wow-delay="0.75s">
-                        <p>Explore the exciting new ways we are serving our community and growing together in faith with our latest ministry initiatives. <a href="#">View All Ministries</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Ministries Section End -->
-
-    <!-- Our Sermons Section Start -->
-    <div class="our-sermons">
-        <div class="container">
-            <div class="row section-row">
-                <!-- Section Title Start -->
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">our sermons</h3>
-                    <h2 class="text-anime-style-2" data-cursor="-opaque">Our Latest <span>Sermons</span></h2>
-                </div>
-                <!-- Section Title End -->
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Sermons Item Start -->
-                    <div class="sermons-item wow fadeInUp">
-                        <!-- Sermons Image Start -->
-                        <div class="sermons-image">
-                            <figure>
-                                <a href="#" class="image-anime" data-cursor-text="View">
-                                    <img src="images/sermons-img-1.jpg" alt="">
-                                </a>
-                            </figure>
-                            <!-- Sermons Meta Start -->
-                            <div class="sermons-meta">
-                                <h3>03</h3>
-                                <p>aug</p>
-                            </div>
-                            <!-- Sermons Meta End -->
-
-                            <div class="sermons-audio-icon">
-                                <a href="#"><img src="images/audio-play-icon.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Sermons Image End -->
-
-                        <!-- Sermons Body Start -->
-                        <div class="sermons-body">
-                            <!-- Sermons Title Start -->
-                            <div class="sermons-title">
-                                <h2>Start a New Way of Living</h2>
-                            </div>
-                            <!-- Sermons Title End -->
-
-                            <!-- Sermons List Start -->
-                            <div class="sermons-list">
-                                <ul>
-                                    <li><i class="fa-solid fa-user"></i>Sermon From : <span>John Due</span></li>
-                                    <li><i class="fa-solid fa-tag"></i>Categories : <span>Pray</span></li>
-                                    <li><i class="fa-regular fa-calendar-days"></i>Date & Time : <span>Aug 03 - on 7:00 am - 11:00 am</span></li>
-                                </ul>
-                            </div>
-                            <!-- Sermons List End -->
-                        </div>
-                        <!-- Sermons Body End -->
-                    </div>
-                    <!-- Sermons Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Sermons Item Start -->
-                    <div class="sermons-item wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Sermons Image Start -->
-                        <div class="sermons-image">
-                            <figure>
-                                <a href="#" class="image-anime" data-cursor-text="View">
-                                    <img src="images/sermons-img-2.jpg" alt="">
-                                </a>
-                            </figure>
-                            <!-- Sermons Meta Start -->
-                            <div class="sermons-meta">
-                                <h3>03</h3>
-                                <p>aug</p>
-                            </div>
-                            <!-- Sermons Meta End -->
-
-                            <div class="sermons-audio-icon">
-                                <a href="#"><img src="images/audio-play-icon.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Sermons Image End -->
-
-                        <!-- Sermons Body Start -->
-                        <div class="sermons-body">
-                            <!-- Sermons Title Start -->
-                            <div class="sermons-title">
-                                <h2>overcoming life's challenges</h2>
-                            </div>
-                            <!-- Sermons Title End -->
-
-                            <!-- Sermons List Start -->
-                            <div class="sermons-list">
-                                <ul>
-                                    <li><i class="fa-solid fa-user"></i>Sermon From : <span>John Due</span></li>
-                                    <li><i class="fa-solid fa-tag"></i>Categories : <span>Pray</span></li>
-                                    <li><i class="fa-regular fa-calendar-days"></i>Date & Time : <span>Aug 03 - on 7:00 am - 11:00 am</span></li>
-                                </ul>
-                            </div>
-                            <!-- Sermons List End -->
-                        </div>
-                        <!-- Sermons Body End -->
-                    </div>
-                    <!-- Sermons Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Sermons Item Start -->
-                    <div class="sermons-item wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Sermons Image Start -->
-                        <div class="sermons-image">
-                            <figure>
-                                <a href="#" class="image-anime" data-cursor-text="View">
-                                    <img src="images/sermons-img-3.jpg" alt="">
-                                </a>
-                            </figure>
-                            <!-- Sermons Meta Start -->
-                            <div class="sermons-meta">
-                                <h3>03</h3>
-                                <p>aug</p>
-                            </div>
-                            <!-- Sermons Meta End -->
-
-                            <div class="sermons-audio-icon">
-                                <a href="#"><img src="images/audio-play-icon.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- Sermons Image End -->
-
-                        <!-- Sermons Body Start -->
-                        <div class="sermons-body">
-                            <!-- Sermons Title Start -->
-                            <div class="sermons-title">
-                                <h2>hope in times of trouble</h2>
-                            </div>
-                            <!-- Sermons Title End -->
-
-                            <!-- Sermons List Start -->
-                            <div class="sermons-list">
-                                <ul>
-                                    <li><i class="fa-solid fa-user"></i>Sermon From : <span>John Due</span></li>
-                                    <li><i class="fa-solid fa-tag"></i>Categories : <span>Pray</span></li>
-                                    <li><i class="fa-regular fa-calendar-days"></i>Date & Time : <span>Aug 03 - on 7:00 am - 11:00 am</span></li>
-                                </ul>
-                            </div>
-                            <!-- Sermons List End -->
-                        </div>
-                        <!-- Sermons Body End -->
-                    </div>
-                    <!-- Sermons Item End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Sermons Section End -->
-
-    <!-- Verse Church Section Start -->
-    <div class="verse-church">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Verse Church Content Start -->
-                    <div class="verse-church-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">verse of the day</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Life is a Church that Loves <span>God and People.</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">Life is a church dedicated to loving God and serving people. We foster a welcoming community where faith and compassion drive everything we do, striving to make a positive impact both spiritually and socially. Join us in this journey.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Verse Church Btn Start -->
-                        <div class="verse-church-btn wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="#" class="btn-default">donate now</a>
-                        </div>
-                        <!-- Verse Church Btn End -->
-                    </div>
-                    <!-- Verse Church Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Verse Church Section End -->
-
-    <!-- CTA Box Section Start -->
-    <div class="cta-box">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-9">
-                    <!-- CTA Box Content Start -->
-                    <div class="cta-box-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Get Involved and Stay Connected: Support Our Mission and Join Our Community Today!</h2>
-                        </div>
-                        <!-- Section Title End -->
-                    </div>
-                    <!-- CTA Box Content End -->
-                </div>
-
-                <div class="col-md-3">
-                    <!-- CTA Box Btn Start -->
-                    <div class="cta-box-btn wow fadeInUp">
-                        <a href="#" class="btn-default btn-highlighted">join group</a>
-                    </div>
-                    <!-- CTA Box Btn End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CTA Box Section End -->
-
-    <!-- Our Event Section Start -->
-    <div class="our-event">
+    <div class="about-us" id="home-about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="event-image">
-                        <figure class="image-anime reveal">
-                            <img src="images/event-image.jpg" alt="">
-                        </figure>
+                    <!-- About Image Start -->
+                    <div class="about-image">
+                        <div class="about-img-1">
+                            <figure class="image-anime reveal">
+                                <img src="images/Churchimg-2.png" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="about-img-2">
+                            <figure class="image-anime reveal">
+                                <img src="images/churchimg3.png" alt="">
+                            </figure>
+                        </div>
                     </div>
+                    <!-- About Image End -->
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="event-content">
+                    <!-- About Content Start -->
+                    <div class="about-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">up coming event</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Faith and Fellowship <span>Festival</span></h2>
+                            <h3 class="wow fadeInUp">Renovation Project</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">St. Anthony's Church, Mayura Place - Building Fundraising</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s"> After 35 years of anticipation, we are thrilled that God has answered our prayers, and now we are ready to build a beautiful new church. We invite all 100,000 devotees of St. Anthony to join us by donating a single brick, priced at Rs. 1000/-, to help us reach our fundraising goal.</p>
+                           
                         </div>
                         <!-- Section Title End -->
 
-                        <!-- Event Body Start -->
-                        <div class="event-body">
-                            <!-- Event Item Start -->
-                            <div class="event-item wow fadeInUp">
+                        <!-- About Content List Start -->
+                        <div class="about-content-body">
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp">
                                 <div class="icon-box">
-                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <img src="images/icon-about-list-1.svg" alt="">
                                 </div>
-                                <div class="event-item-content">
-                                    <p>Aug 03, 2024 - 8:00 am - 5:00 pm</p>
+                                <div class="about-list-item-content">
+                                    <h3 style="margin-bottom:10px">Project Goals</h3>
+                                    <p>To create a modern, spacious place of worship that will serve future generations and inspire our community.</p>
                                 </div>
                             </div>
-                            <!-- Event Item End -->
+                            <!-- About List Item End -->
 
-                            <!-- Event Item Start -->
-                            <div class="event-item wow fadeInUp" data-wow-delay="0.25s">
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.25s">
                                 <div class="icon-box">
-                                    <i class="fa-solid fa-location-dot"></i>
+                                    <img src="images/icon-about-list-2.svg" alt="">
                                 </div>
-                                <div class="event-item-content">
-                                    <p>Bobst Library, 70 Washington Square South, New York</p>
+                                <div class="about-list-item-content">
+                                    <h3 style="margin-bottom:10px">Project Timeline</h3>
+                                    <p>From ground-breaking to completion, we will share key milestones and updates on construction progress.</p>
                                 </div>
                             </div>
-                            <!-- Event Item End -->
-                        </div>
-                        <!-- Event Body End -->
+                            <!-- About List Item End -->
 
-                        <!-- Event Footer Start -->
-                        <div class="event-footer">
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">The Faith and Fellowship Festival is a vibrant celebration featuring worship, community activities, and fellowship. Enjoy inspiring sermons, engaging workshops, and fun for all ages, fostering spiritual growth and connection.</p>
-                        </div>
-                        <!-- Event Footer End -->
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="images/icon-about-list-3.svg" alt="">
+                                </div>
+                                <div class="about-list-item-content">
+                                    <h3 style="margin-bottom:10px">Budget Overview</h3>
+                                    <p>Funds needed are outlined in our BOQ. Each Rs. 1000/- donation helps buy a brick, bringing us closer to our vision.</p>
+                                    
+                                </div>
+                            </div>
+                            <!-- About List Item End -->
 
-                        <!-- Event Btn Start -->
-                        <div class="event-btn wow fadeInUp" data-wow-delay="0.75s">
-                            <a href="#" class="btn-default">join in person</a>
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <img src="images/icon-about-list-4.svg" alt="">
+                                </div>
+                                <div class="about-list-item-content">
+                                    <h3 style="margin-bottom:10px">Progress Updates</h3>
+                                    <p>We will share photos and updates to show how your contributions make a difference in building our church.</p> 
+                                </div>
+                            </div>
+                            <!-- About List Item End -->
                         </div>
-                        <!-- Event Btn End -->
+                        <!-- About Content List End -->
+
+
+                        <!-- About Us Footer Start -->
+                        <div class="about-us-footer wow fadeInUp" data-wow-delay="1s">
+                            <a href="contact.html" class="btn-default">Buy us Brick</a>
+                        </div>
+                        <!-- About Us Footer End -->
                     </div>
+                    <!-- About Content End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Our Event Section End -->
 
-    <!-- Donate Now Section Start -->
+
     <div class="donate-now parallaxie">
         <div class="container">
             <div class="row align-items-center">
@@ -1086,7 +490,7 @@
                     <div class="intro-video-box">
                         <!-- Video Play Button Start -->
                         <div class="video-play-button">
-                            <a href="../../../www.youtube.com/watch60d8.html?v=Y-x0efG1seA" class="popup-video" data-cursor-text="Play">
+                            <a href="images/St Anthony's Church - Mayura Place.mp4" class="popup-video" data-cursor-text="Play">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -1099,199 +503,228 @@
                     <div class="donate-box">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">donate now</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Support <span>Our Mission</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">Your generous support enables to continue its mission of spreading God's love and serving our community.</p>
+                            <h3 class="wow fadeInUp">Join Us in Building St. Anthony’s Church</h3>
+                           <h2 class="text-anime-style-2" data-cursor="-opaque">‘Buy a Brick’ and Lend a Hand</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">After 35 years of long waiting, we are very happy today, that God has answered our prayers, and now we are ready to build this beautiful church. Our aim is to join hands with the 100,000 devotees of St. Anthony and invite them to donate a single brick, priced at Rs. 1000/-, to collect the required funds. We humbly request the kind support from all those who wish to be part of this blessed project. Please buy a brick and lend your hand.</p>
                         </div>
                         <!-- Section Title End -->
-
+                    
                         <div class="donate-form wow fadeInUp" data-wow-delay="0.5s">
-                            <form id="donateForm" action="#" method="POST">
+                            <form id="donateForm" action="#" method="POST" onsubmit="sendEmail(event)">
+
+                                <!-- Full Name Input -->
                                 <div class="form-group mb-4">
-                                    <input type="text" name="text" class="form-control" placeholder="donate now ..." required>
+                                    <input type="text" name="fullName" class="form-control" placeholder="Full Name" required>
                                 </div>
-
-                                <fieldset class="donate-value-box">                                  
-                                    <div class="donate-value">
-                                        <input type="radio" id="value1" name="value" value="value1" checked>
-                                        <label for="value1">$ 100.00</label>
-                                      </div>
-                                    
-                                      <div class="donate-value">
-                                        <input type="radio" id="value2" name="value" value="value2">
-                                        <label for="value2">$ 200.00</label>
-                                      </div>
-                                    
-                                      <div class="donate-value">
-                                        <input type="radio" id="value3" name="value" value="value3">
-                                        <label for="value3">$ 300.00</label>
-                                      </div>
-                                      
-                                      <div class="donate-value">
-                                          <input type="radio" id="value4" name="value" value="value4">
-                                          <label for="value4">$ 400.00</label>
-                                      </div>
-                                      
-                                      <div class="donate-value">
-                                          <input type="radio" id="value5" name="value" value="value5">
-                                          <label for="value5">$ 500.00</label>
-                                      </div>
-                                      
-                                      <div class="donate-value">
-                                          <input type="radio" id="value6" name="value" value="value6">
-                                          <label for="value6">$ 600.00</label>
-                                      </div>
-                                </fieldset>
-
+                    
+                                <!-- Contact Number Input -->
+                                <div class="form-group mb-4">
+                                    <input type="tel" name="contactNumber" class="form-control" placeholder="Contact Number" required>
+                                </div>
+                    
+                                <!-- Preferred Time to Contact Input -->
+                                 
+                                <div class="form-group mb-4">
+                                    <input type="text" id="preferredTime" name="preferredTime" class="form-control" placeholder="Preferred Time to Contact" required>
+                                </div>
+                                
+                    
+                                <!-- Email Address Input -->
+                                <div class="form-group mb-4">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                    
+                                <!-- No. of Bricks Required Input -->
+                                <div class="form-group mb-4">
+                                    <input type="number" name="noOfBricks" class="form-control" placeholder="No. of Bricks Required" min="1" required>
+                                </div>
+                    
+                                <!-- Address Input -->
+                                <div class="form-group mb-4">
+                                    <input type="text" name="address" class="form-control" placeholder="Address" required>
+                                </div>
+                    
+                                <!-- Country Input -->
+                                <div class="form-group mb-4">
+                                    <input type="text" name="country" class="form-control" placeholder="Country" required>
+                                </div>
+                    
+                                <!-- Parish/Church Input -->
+                                <div class="form-group mb-4">
+                                    <input type="text" name="parish" class="form-control" placeholder="Parish/Church" required>
+                                </div>
+                    
+                                <!-- Donation Amount Input with Rs Currency -->
+                                
+                    
+                                <!-- Submit Button -->
                                 <div class="form-group-btn">
                                     <button type="submit" class="btn-default">donate now</button>
                                 </div>
                             </form>
                         </div>
                     </div>
+                    
+                    <!-- JavaScript to Display Alert -->
+                    <script>
+                        function showThankYouAlert() {
+                            alert("Thank you for your generosity! One of our parish members will contact you soon.");
+                            return false; // Prevents actual form submission
+                        }
+                    </script>
+                    
                     <!-- Donate Box End -->
                 </div>
+
+
+                <script>
+                    // Initialize EmailJS
+                    (function(){
+                        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+                    })();
+                
+                    function sendEmail(event) {
+                        event.preventDefault(); // Prevent the default form submission
+                
+                        // Get form values
+                        const form = document.getElementById('donateForm');
+                        const formData = new FormData(form);
+                        const data = {
+                            fullName: formData.get('fullName'),
+                            contactNumber: formData.get('contactNumber'),
+                            preferredTime: formData.get('preferredTime'),
+                            email: formData.get('email'),
+                            noOfBricks: formData.get('noOfBricks'),
+                            address: formData.get('address'),
+                            country: formData.get('country'),
+                            parish: formData.get('parish'),
+                        };
+                
+                        // Send email using EmailJS
+                        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data)
+                            .then((response) => {
+                                console.log('SUCCESS!', response.status, response.text);
+                                // Show SweetAlert success message
+                                swal({
+                                    title: "Thank You!",
+                                    text: "One of our parish members will contact you soon.",
+                                    icon: "success",
+                                    button: "OK",
+                                });
+                                form.reset(); // Reset form after submission
+                            }, (error) => {
+                                console.log('FAILED...', error);
+                                // Show SweetAlert error message
+                                swal({
+                                    title: "Oops!",
+                                    text: "There was an issue with your submission. Please try again later.",
+                                    icon: "error",
+                                    button: "OK",
+                                });
+                            });
+                    }
+                
+                    // Initialize flatpickr
+                    flatpickr("#preferredTime", {
+                        enableTime: true,
+                        dateFormat: "Y-m-d H:i", // Format for the date and time
+                        minDate: "today", // Prevent selecting past dates
+                        time_24hr: true, // Use 24-hour format
+                    });
+                </script>
+                
+                
             </div>
         </div>
     </div>
-    <!-- Donate Now Section End -->
 
-       <!-- Our Blog Start -->
-       <div class="our-blog">
+
+    <div class="our-event">
         <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                     <!-- Section Title Start -->
-                     <div class="section-title">
-                        <h3 class="wow fadeInUp">latest post</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Read Our <span>Latest Articles</span></h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="event-image">
+                        <figure class="image-anime reveal">
+                            <img src="images/church img4.jpg" alt="Holy Mass Schedule">
+                        </figure>
                     </div>
-                    <!-- Section Title End -->
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Blog Item Start -->
-                    <div class="blog-item wow fadeInUp">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image" data-cursor-text="View">
-                            <figure>
-                                <a href="#" class="image-anime">
-                                    <img src="images/post-1.jpg" alt="">
-                                </a>
-                            </figure>
+    
+                <div class="col-lg-6">
+                    <div class="event-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Our Holy Mass Schedule</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Join Us for Worship <span>and Community</span></h2>
                         </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- post Item Body Start -->
-                        <div class="post-item-body">
-                            <h2><a href="#">This Week's Sermon: Embracing Forgiveness</a></h2>
-                        </div>
-                        <!-- Post Item Body End-->
-
-                        <!-- Post Item Footer Start-->
-                        <div class="post-item-footer">
-                            <a href="#" class="read-more-btn">read more</a>
-                        </div>
-                        <!-- Post Item Footer End-->
-                    </div>
-                    <!-- Blog Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Blog Item Start -->
-                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image" data-cursor-text="View">
-                            <figure>
-                                <a href="#" class="image-anime">
-                                    <img src="images/post-2.jpg" alt="">
-                                </a>
-                            </figure>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- post Item Body Start -->
-                        <div class="post-item-body">
-                            <h2><a href="#">Join Us for the Christmas Eve Candlelight Service</a></h2>
-                        </div>
-                        <!-- Post Item Body End-->
-
-                        <!-- Post Item Footer Start-->
-                        <div class="post-item-footer">
-                            <a href="#" class="read-more-btn">read more</a>
-                        </div>
-                        <!-- Post Item Footer End-->
-                    </div>
-                    <!-- Blog Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Blog Item Start -->
-                    <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image" data-cursor-text="View">
-                            <figure>
-                                <a href="#" class="image-anime">
-                                    <img src="images/post-3.jpg" alt="">
-                                </a>
-                            </figure>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- post Item Body Start -->
-                        <div class="post-item-body">
-                            <h2><a href="#">New Bible Study Series Starts This Sunday</a></h2>
-                        </div>
-                        <!-- Post Item Body End-->
-
-                        <!-- Post Item Footer Start-->
-                        <div class="post-item-footer">
-                            <a href="#" class="read-more-btn">read more</a>
-                        </div>
-                        <!-- Post Item Footer End-->
-                    </div>
-                    <!-- Blog Item End -->
-                </div>
-            </div>
-        </div>
-     </div>
-    <!-- Our Blog End -->
-
-    <!-- Subscribe Newsletter Section Start -->
-    <div class="subscribe-newsletter parallaxie">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                     <!-- Section Title Start -->
-                     <div class="section-title">
-                        <h3 class="wow fadeInUp">subscribe newsletter</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Keep Up With Our <span>Latest News</span></h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.25s">Subscribe to our newsletter to stay informed about upcoming events, inspiring messages, and the latest news from our church community.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Subscribe Newsletter Form Start -->
-                    <div class="subscribe-newsletter-form wow fadeInUp" data-wow-delay="0.5s">
-                        <form id="newslettersForm" action="#" method="POST">
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control"  id="mail" placeholder="Your Email..." required>
-                                <button type="submit" class="subscribe-btn">subscribe</button>
+                        <!-- Section Title End -->
+    
+                        <!-- Event Body Start -->
+                        <div class="event-body">
+                            <!-- Event Item Start -->
+                            <div class="event-item wow fadeInUp">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div class="event-item-content">
+                                    <p>Tuesday - Novena to St. Anthony and Holy Mass at 6:00 PM</p>
+                                </div>
                             </div>
-                        </form>
+                            <!-- Event Item End -->
+    
+                            <!-- Event Item Start -->
+                            <div class="event-item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div class="event-item-content">
+                                    <p>First Tuesday - Special Healing Service and Holy Mass at 6:00 PM</p>
+                                </div>
+                            </div>
+                            <!-- Event Item End -->
+    
+                            <!-- Event Item Start -->
+                            <div class="event-item wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div class="event-item-content">
+                                    <p>Sunday - Holy Mass at 8:45 AM</p>
+                                </div>
+                            </div>
+                            <!-- Event Item End -->
+    
+                            <!-- Event Item Start -->
+                            <div class="event-item wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div class="event-item-content">
+                                    <p>Sunday - English Holy Mass at 11:30 AM</p>
+                                </div>
+                            </div>
+                            <!-- Event Item End -->
+                        </div>
+                        <!-- Event Body End -->
+    
+                        <!-- Event Footer Start -->
+                        <div class="event-footer">
+                            <p class="wow fadeInUp" data-wow-delay="1s">Join us for our Holy Mass services as we come together in faith, prayer, and community. We welcome everyone to experience the joy and peace that worship brings.</p>
+                        </div>
+                        <!-- Event Footer End -->
+    
+                        <!-- Event Btn Start -->
+                        
+                        <!-- Event Btn End -->
                     </div>
-                    <!-- Subscribe Newsletter Form End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Subscribe Newsletter Section End -->
+    
 
-    <!-- Footer Start -->
+ 
+   
     <footer class="main-footer">
         <div class="container">
             <div class="row">
@@ -1306,7 +739,7 @@
 
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content">
-                            <p>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                            <p>Since 1969, St. Anthony’s Church has served as a haven of faith and unity, welcoming all in Mayura Place.</p>
                         </div>
                         <!-- Footer Social Links Start -->
                         <div class="footer-social-links">

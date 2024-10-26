@@ -715,7 +715,7 @@ header.main-header .header-sticky.active{
 
 .hero{
 	position: relative;
-	background: var(--primary-color) url('../images/hero-bg.jpg') no-repeat;
+	background: var(--primary-color) url('../images/Church-new.PNG') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	min-height: 100vh;
@@ -1959,7 +1959,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .donate-now{
-	background: url('../images/donate-now-bg.jpg') no-repeat;
+	background: url('../images/Church-new.PNG') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 100px 0;
@@ -2439,7 +2439,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: url('../images/page-header-bg.jpg') no-repeat;
+	background: url('../images/Church-new.PNG') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 190px 0 100px;

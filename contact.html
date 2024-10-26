@@ -55,7 +55,8 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
+						<h3 style="color:white;">St'Anthony Church</h3>
+					</a>
 					</a>
 					<!-- Logo End -->
 
@@ -63,38 +64,22 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul class="sub-menu">
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Image</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
-                                    </ul>
-                                </li>                                
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="sermons-single.html">Sermons Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="campaign.html">Campaigns</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="campaign-single.html">Campaign Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="ministries.html">Ministries</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="ministry-single.html">Ministries Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="pastor.html">pastor</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item "><a class="nav-link" href="index.html">Home</a>
+                                   
+                                </li>       
+                                
+                                <li class="nav-item "><a class="nav-link" href="gallery.html">Gallery</a>
+                                   
+                                </li>     
+                               
+                                
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                                 <li class="nav-item highlighted-menu"><a class="nav-link" href="#">donate now</a></li>                               
                             </ul>
                         </div>
                         <!-- Let’s Start Button Start -->
                         <div class="header-btn d-inline-flex">
-                            <a href="#" class="btn-default">donate now</a>
+                            <a href="contact.html" class="btn-default">donate now</a>
                         </div>
                         <!-- Let’s Start Button End -->
 					</div>
@@ -116,10 +101,7 @@
 					<div class="page-header-box">
 						<h1 class="text-anime-style-2" data-cursor="-opaque">Contact Us</h1>
 						<nav class="wow fadeInUp">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">contact us</li>
-							</ol>
+							
 						</nav>
 					</div>
 					<!-- Page Header Box End -->
@@ -157,7 +139,7 @@
                                 <!-- Contact Info Content Start -->
                                 <div class="contact-info-content">
                                     <p>give us a call</p>
-                                    <h3>(+01) 789 859 654</h3>
+                                    <h3>( +94 ) 71 861 7070 </h3>
                                 </div>
                                 <!-- Contact Info Content End -->
                             </div>
@@ -174,7 +156,7 @@
                                 <!-- Contact Info Content Start -->
                                 <div class="contact-info-content">
                                     <p>Send us a message</p>
-                                    <h3>info@domain.com</h3>
+                                    <h3>info@stanthonysmayuraplace.lk</h3>
                                 </div>
                                 <!-- Contact Info Content End -->
                             </div>
@@ -191,7 +173,7 @@
                                 <!-- Contact Info Content Start -->
                                 <div class="contact-info-content">
                                     <p>Visit our location</p>
-                                    <h3>786 Maple Avenue Smalltown, USA 67890</h3>
+                                    <h3>St.Anthony , Mayura Place , Colombo</h3>
                                 </div>
                                 <!-- Contact Info Content End -->
                             </div>
@@ -204,43 +186,92 @@
 
                 <div class="col-lg-6">
                     <!-- Contact Form Start -->
-                    <div class="contact-us-form wow fadeInUp" data-wow-delay="0.25s">
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="row">
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="name" class="form-control" id="fname" placeholder="First Name" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
+                    <!-- Form Code -->
+<div class="donate-form wow fadeInUp" data-wow-delay="0.5s">
+    <form id="donateForm" action="#" method="POST" onsubmit="return sendEmail(event)">
+        <!-- Full Name Input -->
+        <div class="form-group mb-4">
+            <input type="text" name="fullName" class="form-control" placeholder="Full Name" required>
+        </div>
 
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="name" class="form-control" id="lname" placeholder="Last Name" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
+        <!-- Contact Number Input -->
+        <div class="form-group mb-4">
+            <input type="tel" name="contactNumber" class="form-control" placeholder="Contact Number" required>
+        </div>
 
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="Email Address" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
+        <!-- Preferred Time to Contact Input -->
+        <div class="form-group mb-4">
+            <input type="text" name="preferredTime" class="form-control" placeholder="Preferred Time to Contact" required>
+        </div>
 
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone No" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
+        <!-- Email Address Input -->
+        <div class="form-group mb-4">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
 
-                                <div class="form-group col-md-12 mb-4">
-                                    <textarea name="msg" class="form-control" id="msg" rows="5" placeholder="Message" required></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
+        <!-- No. of Bricks Required Input -->
+       
+        <!-- Address Input -->
+        <div class="form-group mb-4">
+            <input type="text" name="address" class="form-control" placeholder="Address" required>
+        </div>
 
-                                <div class="col-lg-12">
-                                    <div class="contact-form-btn">
-                                        <button type="submit" class="btn-default">submit message</button>
-                                        <div id="msgSubmit" class="h3 hidden"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+        <!-- Country Input -->
+        <div class="form-group mb-4">
+            <input type="text" name="country" class="form-control" placeholder="Country" required>
+        </div>
+
+        <!-- Donation Amount Input with Rs Currency -->
+        
+
+        <!-- Submit Button -->
+        <div class="form-group-btn">
+            <button type="submit" class="btn-default">contact Now</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS
+    (function () {
+        emailjs.init("YOUR_USER_ID"); // Replace with your User ID from EmailJS
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get the form data
+        const form = document.getElementById('donateForm');
+        const formData = new FormData(form);
+
+        // Create an object to hold the form data
+        const data = {
+            fullName: formData.get('fullName'),
+            contactNumber: formData.get('contactNumber'),
+            preferredTime: formData.get('preferredTime'),
+            email: formData.get('email'),
+            
+            address: formData.get('address'),
+            country: formData.get('country'),
+            
+        };
+
+        // Send the data to EmailJS
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', data)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Thank you for your donation! We will contact you soon.');
+                form.reset(); // Reset the form after submission
+            }, (error) => {
+                console.log('FAILED...', error);
+                alert('There was an error processing your donation. Please try again later.');
+            });
+        
+        return false; // Prevent the default form submission
+    }
+</script>
+
                     <!-- Contact Form End -->
                 </div>
             </div>
@@ -255,16 +286,19 @@
                 <div class="col-lg-12">
                     <!-- Google Map Iframe Start -->
                     <div class="google-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126754.52767974629!2d79.78425055830397!3d6.881140551831349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd0ba269f9b%3A0xfc177caf9e3fc02a!2zU3QgQW50aG9ueSdzIENodXJjaCAtIE1heXVyYSBQbGFjZSB8IOC3g-C3jy7gtoXgtrHgt4rgtq3gt53gtrHgt5Ig4Lav4Lea4LeA4LeD4LeK4Lau4LeP4Lax4La6IC0g4La44La64LeU4La74La04Lav4LeZ4LeD!5e0!3m2!1sen!2slk!4v1729932478265!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map Iframe End -->
                 </div>
             </div>
         </div>
     </div>
+
+    
 	<!-- Google Map End -->
 
     <!-- Footer Start -->
+      
     <footer class="main-footer">
         <div class="container">
             <div class="row">
@@ -279,15 +313,15 @@
 
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content">
-                            <p>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                            <p>Since 1969, St. Anthony’s Church has served as a haven of faith and unity, welcoming all in Mayura Place.</p>
                         </div>
                         <!-- Footer Social Links Start -->
                         <div class="footer-social-links">
                             <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/stanthonysmayuraplace/about/?_rdr"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>                                                                
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>                                                                 -->
                             </ul>
                         </div>
                         <!-- Footer Social Links End -->
@@ -298,31 +332,13 @@
                 
                 <div class="col-lg-2 col-md-3 col-6">
                     <!-- About Links Start -->
-                    <div class="footer-links">
-                        <h3>quick links</h3>
-                        <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">our chruch</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">event</a></li>
-                            <li><a href="#">news</a></li>
-                        </ul>
-                    </div>
+                   
                     <!-- About Links End -->
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6">
                     <!-- About Links Start -->
-                    <div class="footer-links">
-                        <h3>our services</h3>
-                        <ul>
-                            <li><a href="#">support groups</a></li>
-                            <li><a href="#">special events</a></li>
-                            <li><a href="#">online services</a></li>
-                            <li><a href="#">pastoral care</a></li>
-                            <li><a href="#">sunday worship</a></li>
-                        </ul>
-                    </div>
+                    
                     <!-- About Links End -->
                 </div>
 
@@ -338,7 +354,7 @@
                                     <img src="images/icon-phone.svg" alt="">
                                 </div>
                                 <div class="footer-info-box-content">
-                                    <p>(+0) 789 345 012</p>
+                                    <p>+94 71 861 7070 </p>
                                 </div>                                
                             </div>
                             <!-- Footer Info Box End -->
@@ -349,7 +365,7 @@
                                     <img src="images/icon-mail.svg" alt="">
                                 </div>
                                 <div class="footer-info-box-content">
-                                    <p>domain@gmail.com</p>
+                                    <p>sacmayuraplace@gmail.com</p>
                                 </div>
                             </div>
                             <!-- Footer Info Box End -->
@@ -360,7 +376,9 @@
                                     <img src="images/icon-location.svg" alt="">
                                 </div>
                                 <div class="footer-info-box-content">
-                                    <p>24/11 Robert Road,New York,USA</p>
+                                    <p>St Anthonys Catholic Church,
+                                        Mayura Place,
+                                        Colombo 06.</p>
                                 </div>                                
                             </div>
                             <!-- Footer Info Box End -->
@@ -377,22 +395,12 @@
                     <div class="col-lg-6 col-md-6">
                         <!-- Footer Copyright Start -->
                         <div class="footer-copyright-text">
-                            <p>Copyright 2024 Avenix. All Rights Reserved.</p>
+                            <p>Copyright 2024 Idearigs. All Rights Reserved.</p>
                         </div>
                         <!-- Footer Copyright End -->
                     </div>
 
-                    <div class="col-lg-6 col-md-6">
-                        <!-- Footer Social Link Start -->
-                        <div class="footer-privacy-policy">
-                            <ul>
-                                <li><a href="#">term & condition</a></li>
-                                <li><a href="#">support</a></li>
-                                <li><a href="#">privacy policy</a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Social Link End -->
-                    </div>
+                    
                 </div>
             </div>
             <!-- Footer Copyright Section End -->
