@@ -490,12 +490,60 @@
                     <div class="intro-video-box">
                         <!-- Video Play Button Start -->
                         <div class="video-play-button">
-                            <a href="./church doc.pdf" class="popup-video" data-cursor-text="Play">
+                            <a href="#pdfModal"  data-cursor-text="Play" onclick="showModal()">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                         <!-- Video Play Button End -->
                     </div>
+                    
+                    <!-- Modal Structure -->
+                    <div id="pdfModal" class="pdf-modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <iframe src="./church doc.pdf" frameborder="0" class="pdf-iframe"></iframe>
+                    </div>
+                    
+                    <!-- Updated CSS for Modal and Fullscreen PDF View -->
+                    <style>
+                    .pdf-modal {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;  /* Full viewport width */
+                        height: 100vh;  /* Full viewport height */
+                        background-color: rgba(0, 0, 0, 0.8);
+                        z-index: 1000;
+                        overflow: hidden; /* Ensures no additional scrollbars */
+                    }
+                    .pdf-modal .close {
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                        color: #fff;
+                        font-size: 30px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        z-index: 1001; /* Ensures close button is above iframe */
+                    }
+                    .pdf-iframe {
+                        width: 100vw;
+                        height: 100vh;
+                        border: none;
+                    }
+                    </style>
+                    
+                    <!-- JavaScript for Modal -->
+                    <script>
+                    function showModal() {
+                        document.getElementById('pdfModal').style.display = 'block';
+                    }
+                    function closeModal() {
+                        document.getElementById('pdfModal').style.display = 'none';
+                    }
+                    </script>
+                    
+                    
                 </div>
 
                 <div class="col-lg-6 col-md-8">
