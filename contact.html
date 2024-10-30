@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
+
 <!-- Mirrored from demo.awaikenthemes.com/html-preview/avenix/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2024 17:31:19 GMT -->
 <head>
 	<!-- Meta -->
@@ -20,6 +21,7 @@
     <link href="../../../fonts.googleapis.com/css2fd00.css?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 	<!-- Bootstrap Css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<!-- SlickNav Css -->
 	<link href="css/slicknav.min.css" rel="stylesheet">
 	<!-- Swiper Css -->
@@ -187,92 +189,75 @@
                 <div class="col-lg-6">
                     <!-- Contact Form Start -->
                     <!-- Form Code -->
-<div class="donate-form wow fadeInUp" data-wow-delay="0.5s">
-    <form id="donateForm" action="#" method="POST" onsubmit="return sendEmail(event)">
-        <!-- Full Name Input -->
-        <div class="form-group mb-4">
-            <input type="text" name="fullName" class="form-control" placeholder="Full Name" required>
-        </div>
+                    <div class="donate-form wow fadeInUp" data-wow-delay="0.5s">
+                        <form id="donateForm" action="contact.php" method="POST">
 
-        <!-- Contact Number Input -->
-        <div class="form-group mb-4">
-            <input type="tel" name="contactNumber" class="form-control" placeholder="Contact Number" required>
-        </div>
+                            <!-- Full Name Input -->
+                            <div class="form-group mb-4">
+                                <input type="text" name="fullName" class="form-control" placeholder="Full Name" required>
+                            </div>
 
-        <!-- Preferred Time to Contact Input -->
-        <div class="form-group mb-4">
-            <input type="text" name="preferredTime" class="form-control" placeholder="Preferred Time to Contact" required>
-        </div>
+                            <!-- Contact Number Input -->
+                            <div class="form-group mb-4">
+                                <input type="tel" name="contactNumber" class="form-control" placeholder="Contact Number" required>
+                            </div>
 
-        <!-- Email Address Input -->
-        <div class="form-group mb-4">
-            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-        </div>
+                            <!-- Preferred Time to Contact Input -->
+                            <div class="form-group mb-4">
+                                <input type="text" name="preferredTime" class="form-control" placeholder="Preferred Time to Contact" required>
+                            </div>
 
-        <!-- No. of Bricks Required Input -->
-       
-        <!-- Address Input -->
-        <div class="form-group mb-4">
-            <input type="text" name="address" class="form-control" placeholder="Address" required>
-        </div>
+                            <!-- Email Address Input -->
+                            <div class="form-group mb-4">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                            </div>
 
-        <!-- Country Input -->
-        <div class="form-group mb-4">
-            <input type="text" name="country" class="form-control" placeholder="Country" required>
-        </div>
+                            <!-- No. of Bricks Required Input -->
+                        
+                            <!-- Address Input -->
+                            <div class="form-group mb-4">
+                                <input type="text" name="address" class="form-control" placeholder="Address" required>
+                            </div>
 
-        <!-- Donation Amount Input with Rs Currency -->
-        
+                            <!-- Country Input -->
+                            <div class="form-group mb-4">
+                                <input type="text" name="country" class="form-control" placeholder="Country" required>
+                            </div>
 
-        <!-- Submit Button -->
-        <div class="form-group-btn">
-            <button type="submit" class="btn-default">contact Now</button>
-        </div>
-    </form>
-</div>
+                            <!-- Donation Amount Input with Rs Currency -->
+                            
 
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    // Initialize EmailJS
-    (function () {
-        emailjs.init("YOUR_USER_ID"); // Replace with your User ID from EmailJS
-    })();
+                            <!-- Submit Button -->
+                            <div class="form-group-btn">
+                                <button type="submit" class="btn-default">contact Now</button>
+                            </div>
+                        </form>
+                    </div>
 
-    function sendEmail(event) {
-        event.preventDefault(); // Prevent the default form submission
 
-        // Get the form data
-        const form = document.getElementById('donateForm');
-        const formData = new FormData(form);
+                    <script>
+                        // Check the URL for the status parameter
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const status = urlParams.get('status');
 
-        // Create an object to hold the form data
-        const data = {
-            fullName: formData.get('fullName'),
-            contactNumber: formData.get('contactNumber'),
-            preferredTime: formData.get('preferredTime'),
-            email: formData.get('email'),
-            
-            address: formData.get('address'),
-            country: formData.get('country'),
-            
-        };
+                        // Show SweetAlert message based on status
+                        if (status === 'success') {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Submitted Successfully!',
+                                text: 'Thank you for contacting us. We will get back to you soon!',
+                                confirmButtonText: 'OK'
+                            });
+                        } else if (status === 'error') {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Submission Failed!',
+                                text: 'There was an error processing your request. Please try again later.',
+                                confirmButtonText: 'OK'
+                            });
+                        }
+                    </script>
 
-        // Send the data to EmailJS
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', data)
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-                alert('Thank you for your donation! We will contact you soon.');
-                form.reset(); // Reset the form after submission
-            }, (error) => {
-                console.log('FAILED...', error);
-                alert('There was an error processing your donation. Please try again later.');
-            });
-        
-        return false; // Prevent the default form submission
-    }
-</script>
-
-                    <!-- Contact Form End -->
                 </div>
             </div>
         </div>

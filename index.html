@@ -30,6 +30,7 @@
 	<link href="css/animate.css" rel="stylesheet">
 	<!-- Magnific Popup Core Css File -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<!-- Mouse Cursor Css File -->
 	<link rel="stylesheet" href="css/mousecursor.css">
     <!-- Audio Css File -->
@@ -556,9 +557,34 @@
                             <p class="wow fadeInUp" data-wow-delay="0.25s">After 35 years of long waiting, we are very happy today, that God has answered our prayers, and now we are ready to build this beautiful church. Our aim is to join hands with the 100,000 devotees of St. Anthony and invite them to donate a single brick, priced at Rs. 1000/-, to collect the required funds. We humbly request the kind support from all those who wish to be part of this blessed project. Please buy a brick and lend your hand.</p>
                         </div>
                         <!-- Section Title End -->
+                        <style>
+                            .loading-spinner {
+                                display: none; /* Hidden by default */
+                                position: fixed;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                z-index: 1000; /* Make sure it's on top of everything */
+                            }
+                        
+                            .loading-spinner div {
+                                width: 40px;
+                                height: 40px;
+                                border: 4px solid rgba(0, 0, 0, 0.3);
+                                border-top: 4px solid #3498db;
+                                border-radius: 50%;
+                                animation: spin 1s linear infinite;
+                            }
+                        
+                            @keyframes spin {
+                                0% { transform: rotate(0deg); }
+                                100% { transform: rotate(360deg); }
+                            }
+                        </style>
+
                     
                         <div class="donate-form wow fadeInUp" data-wow-delay="0.5s">
-                            <form id="donateForm" action="#" method="POST" onsubmit="sendEmail(event)">
+                            <form id="donateForm" action="donation.php" method="POST" onsubmit="submitDonation(event)">
 
                                 <!-- Full Name Input -->
                                 <div class="form-group mb-4">
@@ -611,6 +637,59 @@
                                 </div>
                             </form>
                         </div>
+
+                        <!-- Loading Spinner -->
+                            <div class="loading-spinner" id="loadingSpinner">
+                                <div></div>
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                            <script>
+                                function submitDonation(event) {
+                                    event.preventDefault(); // Prevent default form submission
+                            
+                                    // Show loading spinner
+                                    document.getElementById('loadingSpinner').style.display = 'block';
+                            
+                                    const formData = new FormData(document.getElementById('donateForm'));
+                            
+                                    fetch('donation.php', {
+                                        method: 'POST',
+                                        body: formData
+                                    })
+                                    .then(response => response.text())
+                                    .then(result => {
+                                        // Hide loading spinner
+                                        document.getElementById('loadingSpinner').style.display = 'none';
+                            
+                                        if (result === 'Success') {
+                                            Swal.fire({
+                                                icon: 'success',
+                                                title: 'Thank you!',
+                                                text: 'One of the Parish will contact you soon!!..',
+                                                confirmButtonText: 'OK'
+                                            });
+                                            document.getElementById('donateForm').reset(); // Reset form
+                                        } else {
+                                            Swal.fire({
+                                                icon: 'error',
+                                                title: 'Oops...',
+                                                text: 'Something went wrong. Please try again later.',
+                                            });
+                                        }
+                                    })
+                                    .catch(error => {
+                                        // Hide loading spinner on error
+                                        document.getElementById('loadingSpinner').style.display = 'none';
+                                        console.error('Error:', error);
+                                        Swal.fire({
+                                            icon: 'error',
+                                            title: 'Oops...',
+                                            text: 'Something went wrong. Please try again later.',
+                                        });
+                                    });
+                                }
+                            </script>
                     </div>
                     
                     <!-- JavaScript to Display Alert -->
