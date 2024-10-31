@@ -11,7 +11,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-    <title>Avenix - Church HTML Template</title>
+    <title>St'Anthony Church -Mayura place</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<!-- Google Fonts Css-->
@@ -483,6 +483,83 @@
         </div>
     </div>
 
+    <style>
+.donation-section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.section-title1 {
+  font-size: 3.2em; /* Increases the title size */
+  color: #333;
+  margin-bottom: 70px; /* Adds more space below the title */
+}
+
+.table-wrapper {
+  max-width: 800px; /* Increased table width */
+  max-height: 400px;
+  margin: 0 auto;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.donors-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.donors-table th, .donors-table td {
+  padding: 15px;
+  font-size: 1.2em;
+  border: 1px solid #ddd; /* Adds gray border to cells */
+}
+
+.donors-table th {
+  background-color: #fe6035; /* Sets header background color */
+  color: #fff; /* Sets header text color to white for contrast */
+  text-align: left;
+}
+
+.donors-table td {
+  color: #333;
+}
+
+.donors-table td:first-child {
+  text-align: left; /* Left-aligns the donor names */
+}
+
+.donors-table td:last-child {
+  text-align: center; /* Centers the "Bricks Donated" values */
+}
+
+
+    </style>
+
+    <section class="donation-section">
+        <h2 class="section-title1">Our Generous Donors</h2>
+        <div class="table-wrapper">
+          <table class="donors-table">
+            <thead>
+              <tr>
+                <th>Donor Name</th>
+                <th>Bricks Donated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sample rows; add more as needed -->
+              <tr><td>John Doe</td><td>10</td></tr>
+              <tr><td>Mary Smith</td><td>5</td></tr>
+              <tr><td>James Brown</td><td>3</td></tr>
+              <!-- Add more rows dynamically if possible -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
 
     <div class="donate-now parallaxie">
         <div class="container">
@@ -703,7 +780,6 @@
                     <!-- Donate Box End -->
                 </div>
 
-
                 <script>
                     // Initialize EmailJS
                     (function(){
@@ -759,6 +835,10 @@
                         time_24hr: true, // Use 24-hour format
                     });
                 </script>
+
+
+
+
                 
                 
             </div>
