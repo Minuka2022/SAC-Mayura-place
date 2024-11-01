@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-// Database connection
-$host = 'localhost';  // Change if your DB is hosted elsewhere
-$db_user = 'root';    // Your database username
-$db_password = '';     // Your database password
-$db_name = 'church_donations';  // Your database name
+$host = 'localhost';  // Replace with your actual server IP or hostname
+$db_user = 'root';
+$db_password = '';
+$db_name = 'church_donations';
+
 
 // Create connection
 $conn = new mysqli($host, $db_user, $db_password, $db_name);
