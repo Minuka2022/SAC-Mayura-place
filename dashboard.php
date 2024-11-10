@@ -6,10 +6,10 @@ if (!isset($_SESSION['user_logged_in'])) {
 }
 
 // Database connection
-$host = 'localhost';
-$db = 'church_donations';
-$user = 'root'; // change this to your DB username
-$pass = ''; // change this to your DB password
+$host = '162.214.201.218';
+$db = 'stantho2_church';
+$user = 'stantho2_root'; // change this to your DB username
+$pass = '#Minuka#2024'; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {
@@ -22,6 +22,9 @@ $data = $result->fetch_assoc();
 $donor_count = $data['donor_count'];
 $total_bricks = $data['total_bricks'];
 $total_amount = $total_bricks * 1000; // Rs 1000 per brick
+
+$total_bricks_goal = 100000; // Total goal of bricks
+$remaining_bricks = $total_bricks_goal - $total_bricks;
 
 // Handle adding new donor
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
@@ -142,10 +145,11 @@ if (isset($_GET['delete_id'])) {
     <div class="dashboard-container">
         <h1>Dashboard</h1>
         <div class="cards">
-            <div class="card">Donors: <?php echo $donor_count; ?></div>
-            <div class="card">Total Bricks: <?php echo $total_bricks; ?></div>
-            <div class="card">Total Amount Raised: Rs <?php echo $total_amount; ?></div>
-        </div>
+        <div class="card">Donors: <?php echo $donor_count; ?></div>
+        <div class="card">Total Bricks: <?php echo $total_bricks; ?></div>
+        <div class="card">Total Amount Raised: Rs <?php echo $total_amount; ?></div>
+        <div class="card">Bricks Left: <?php echo $remaining_bricks; ?></div> <!-- New card for remaining bricks -->
+    </div>
         
         <h2>Donor List</h2>
         <button id="addDonorBtn">Add Donor</button>

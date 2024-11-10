@@ -55,12 +55,12 @@
 <body>
 
     <!-- Preloader Start -->
-	<div class="preloader">
+	<!-- <div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
 			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Preloader End -->
 
     <!-- Header Start -->
@@ -70,12 +70,12 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.php">
-						<h3 style="color:white;">St.Anthony's Church</h3>
+						<h3 style="color:white; font-size:20x;">St.Anthony's Church- Mayura place</h3>
 					</a>
 					<!-- Logo End -->
 
 					<!-- Main Menu Start -->
-					<div class="collapse navbar-collapse main-menu">
+					<div class="collapse navbar-collapse main-menu" style="margin-right:20px;">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <li class="nav-item "><a class="nav-link" href="index.html">Home</a>
@@ -116,7 +116,7 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">make a difference today</h3>
-                            <h1 class="text-anime-style-2" data-cursor="-opaque">Rebuild with Us Renewing Faith, Brick by Brick</h1>
+                            <h1 class="text-anime-style-2" data-cursor="-opaque"><span style="color:red;">Buy a Brick </span> and lend your hand </h1>
                             <p class="wow fadeInUp" data-wow-delay="0.25s">Our aim is to join hands with the 100,000 devotees of St. Anthony and invite them to donate a single brick, priced at Rs. 1000/- to collect the required funds.</p>
                         </div>
                         <!-- Section Title End -->
@@ -154,11 +154,7 @@
                             </figure>
                         </div>
 
-                        <div class="about-img-2">
-                            <figure class="image-anime reveal">
-                                <img src="images/about-us-img-2.jpg" alt="">
-                            </figure>
-                        </div>
+                       
                     </div>
                     <!-- About Image End -->
                 </div>
@@ -176,56 +172,7 @@
                         <!-- Section Title End -->
 
                         <!-- About Content List Start -->
-                        <div class="about-content-body">
-                            <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp">
-                                <div class="icon-box">
-                                    <img src="images/icon-about-list-1.svg" alt="">
-                                </div>
-                                <div class="about-list-item-content">
-                                    <h3 style="margin-bottom:10px">Our Mission</h3>
-                                    <p>A welcoming space for worship and unity among all faiths.</p>
-                                </div>
-                            </div>
-                            <!-- About List Item End -->
-
-                            <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.25s">
-                                <div class="icon-box">
-                                    <img src="images/icon-about-list-2.svg" alt="">
-                                </div>
-                                <div class="about-list-item-content">
-                                    <h3 style="margin-bottom:10px">Our Legacy</h3>
-                                    <p>A welcoming space for worship and unity among all faiths.</p>
-                                </div>
-                            </div>
-                            <!-- About List Item End -->
-
-                            <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="icon-box">
-                                    <img src="images/icon-about-list-3.svg" alt="">
-                                </div>
-                                <div class="about-list-item-content">
-                                    <h3 style="margin-bottom:10px">Renewal Project</h3>
-                                    <p>Planning a larger, modern space to serve future generations.</p>
-                                    
-                                </div>
-                            </div>
-                            <!-- About List Item End -->
-
-                            <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.75s">
-                                <div class="icon-box">
-                                    <img src="images/icon-about-list-4.svg" alt="">
-                                </div>
-                                <div class="about-list-item-content">
-                                    <h3 style="margin-bottom:10px">How You Can Help</h3>
-                                    <p>Support the mission to strengthen our church community.</p> 
-                                </div>
-                            </div>
-                            <!-- About List Item End -->
-                        </div>
+                        
                         <!-- About Content List End -->
 
 
@@ -293,14 +240,19 @@
                     <div class="counter-item">
                         <!-- Counter Title Start -->
                         <div class="counter-title">
-                            <h2><span class="counter">7</span>+</h2>
+                            <h2><span class="counter">25</span>+</h2>
                         </div>
                         <!-- Counter Title End -->
     
                         <!-- Counter Content Start -->
                         <div class="counter-content">
-                            <h3>Parish Council Members</h3>
-                            <p>Honoring the 7 members who served selflessly to support the church's mission and community outreach.</p>
+                            <h3> Lay Leadership
+                            </h3>
+                            <p>Parish Pastoral Council & Other Association
+                            Honoring the members who saved and gone for internal rest and 
+                            Recognizing untiring services continued by the active members serving
+                            Towards the church mission
+                            </p>
                         </div>
                         <!-- Counter Content End -->
                     </div>
@@ -318,8 +270,10 @@
     
                         <!-- Counter Content Start -->
                         <div class="counter-content">
-                            <h3>Community Events</h3>
-                            <p>Over 100 community gatherings, celebrations, and retreats have strengthened our church bonds.</p>
+                            <h3>Devoted Members
+                            </h3>
+                            <p>More than 300 families with 1000-plus members actively participate in church activities around the areas of Mayura Place, Parkumba Place, Sri Sidhartha Road, Kirulapona & Parmankada.
+                                 </p>
                         </div>
                         <!-- Counter Content End -->
                     </div>
@@ -344,10 +298,10 @@
                         </div>
                         <!-- Section Title End -->
 
-                        <!-- Mission Content Body Start -->
+                        <!-- Mission Content Body Start -->ch
                         <div class="mission-content-body">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.25s">At St. Anthony’s Church, we are committed to providing a sacred space where all can come together in faith, worship, and support. We aim to foster a welcoming environment that strengthens our community and promotes unity across generations.</h3>
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">Our mission for this renovation is to build a larger, inclusive sanctuary that meets the growing needs of our congregation, allowing us to continue our spiritual and community work for decades to come.</p>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.25s">The mission of St. Anthony’s church involves serving the community, witnessing the Christian faith, and sharing the good news of Jesus Christ.</h3>
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">The mission of the Church is to proclaim his presence and to serve him where he is to be found. It is why the Catholic Church teaches that we are saved by faith in Christ, but that faith, to be real, must be incarnated in what we do..</p>
                         </div>
                         <!-- Mission Content Body End -->
 
@@ -382,6 +336,109 @@
         </div>
     </div>
     <!-- Our Mission Section End -->
+    <div class="donation-section">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side - Bricks Counter -->
+
+
+            <?php
+
+
+// Database connection
+$host = 'localhost';
+$db = 'church_donations';
+$user = 'root'; 
+$pass = '';
+
+$conn = new mysqli($host, $user, $pass, $db);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch total bricks donated
+$result = $conn->query("SELECT SUM(bricks_donated) as total_bricks FROM donors");
+$data = $result->fetch_assoc();
+$total_bricks_donated = $data['total_bricks'] ?? 0; // Default to 0 if no donations
+
+// Calculate remaining bricks
+$total_bricks_goal = 100000;
+$remaining_bricks = $total_bricks_goal - $total_bricks_donated;
+
+$conn->close();
+?>
+
+
+
+    <div class="col-lg-6">
+        <div class="brick-counter">
+            <h2>Support Our New Church Renovation</h2>
+            <p>Your contribution will help us build our new place of worship brick by brick.</p>
+            <div class="brick-count">
+                <h3>Bricks Left</h3>
+                <h1><span class="counter" id="bricks-left"><?php echo $remaining_bricks; ?></span> / <?php echo $total_bricks_goal; ?></h1>
+            </div>
+            <p>Each brick costs Rs. 1000. Buy a brick and be part of our history!</p>
+        </div>
+    </div>
+
+
+            <!-- Right Side - Bank Details -->
+            <div class="col-lg-6">
+                <div class="bank-details">
+                    <h2 style="margin-bottom:48px;">Donate via Bank Transfer</h2>
+                    
+                    <ul class="bank-info">
+                        <li><strong>Bank Name:</strong>DFCC Bank</li>
+                        <li><strong>Account Number:</strong>1020 4887 3119</li>
+                        <li><strong>Account name:</strong> St. Anthony’s Church Building Project</li>
+                        <li><strong>Bank Branch:</strong> Wellawatte
+                        </li>
+                        
+                    </ul>
+                    <p>Please include "Brick Donation" in the transfer reference.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .donation-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.brick-counter, .bank-details {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.brick-counter h2, .bank-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.brick-count h1 {
+    font-size: 48px;
+    color: #dc3545;
+    margin: 20px 0;
+}
+
+.bank-info {
+    list-style: none;
+    padding: 0;
+}
+
+.bank-info li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+</style>
 
 
     <div class="about-us" id="home-about">
@@ -544,7 +601,7 @@
 $host = 'localhost';
 $db = 'church_donations';
 $user = 'root'; // Replace with your database username
-$pass = ''; // Replace with your database password
+$pass = '';
 
 // Create a new database connection
 $conn = new mysqli($host, $user, $pass, $db);
@@ -608,7 +665,7 @@ $conn->close();
                     <!-- Modal Structure -->
                     <div id="pdfModal" class="pdf-modal">
                         <span class="close" onclick="closeModal()">&times;</span>
-                        <iframe src="./church doc.pdf" frameborder="0" class="pdf-iframe"></iframe>
+                        <iframe src="./St Anthony's Church - Mayura Place.mp4" frameborder="0" class="pdf-iframe"></iframe>
                     </div>
                     
                     <!-- Updated CSS for Modal and Fullscreen PDF View -->
@@ -970,7 +1027,7 @@ $conn->close();
                     <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/footer-logo.svg" alt="">
+                        <h3 style="color:white;">St.Anthony's Church</h3>
                         </div>
                         <!-- Footer Logo End -->
 
