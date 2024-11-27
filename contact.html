@@ -58,9 +58,29 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.php">
-						<h3 style="color:white;">St.Anthony's Church</h3>
-					</a>
+					<style>
+                        /* General styles for navbar-brand */
+                        .navbar-brand h3 {
+                            color: white;
+                            font-size: 20px; /* Ensure font size is consistent */
+                            text-align: center;
+                            max-width: 100%; /* Default to full width for other devices */
+                            margin: 0 auto;
+                        }
+
+                        /* Mobile-specific styles */
+                        @media (max-width: 768px) {
+                            .navbar-brand h3 {
+                                font-size: 16px; /* Adjust font size for smaller screens */
+                                max-width: 90%; /* Set a maximum width for mobile */
+                                word-wrap: break-word; /* Break long text to avoid overflow */
+                            }
+                        }
+
+                     </style>
+                        <a class="navbar-brand" href="index.php">
+                            <h3 >St.Anthony's Church- Mayura place</h3>
+                        </a>
 					</a>
 					<!-- Logo End -->
 
@@ -310,8 +330,8 @@
                     <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <h3 style="color:white;">St.Anthony's Church</h3>
-                            </div>
+                        <h3 style="color:white;">St.Anthony's Church</h3>
+                        </div>
                         <!-- Footer Logo End -->
 
                         <!-- About Footer Content Start -->
@@ -357,7 +377,7 @@
                                     <img src="images/icon-phone.svg" alt="">
                                 </div>
                                 <div class="footer-info-box-content">
-                                    <p>+94 71 861 7070 </p>
+                                    <p>+94 77 756 6025 </p>
                                 </div>                                
                             </div>
                             <!-- Footer Info Box End -->

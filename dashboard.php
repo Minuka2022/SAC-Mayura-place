@@ -6,82 +6,63 @@ if (!isset($_SESSION['user_logged_in'])) {
 }
 
 // Database connection
-$host = '162.214.201.218';
-$db = 'stantho2_church';
-$user = 'stantho2_root'; // change this to your DB username
-$pass = '#Minuka#2024'; 
+$host = 'localhost';
+$db = 'church_donations';
+$user = 'root'; 
+$pass = '';     
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch donor count and total bricks donated
-$result = $conn->query("SELECT COUNT(*) as donor_count, SUM(bricks_donated) as total_bricks FROM donors");
-$data = $result->fetch_assoc();
-$donor_count = $data['donor_count'];
-$total_bricks = $data['total_bricks'];
-$total_amount = $total_bricks * 1000; // Rs 1000 per brick
-
-$total_bricks_goal = 100000; // Total goal of bricks
-$remaining_bricks = $total_bricks_goal - $total_bricks;
-
-// Handle adding new donor
+// Handle adding, editing, and deleting donors
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
     $action = $_POST['action'];
 
-    // Add new donor
     if ($action === 'add') {
-        $donor_name = $_POST['donor_name'];
-        $address = $_POST['address'];
-        $country = $_POST['country'];
-        $contact_no = $_POST['contact_no']; // Change from full_name to contact_no
-        $bricks_donated = $_POST['bricks_donated'];
-
         $stmt = $conn->prepare("INSERT INTO donors (donor_name, address, country, Contact_No, bricks_donated) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssi", $donor_name, $address, $country, $contact_no, $bricks_donated);
+        $stmt->bind_param("ssssi", $_POST['donor_name'], $_POST['address'], $_POST['country'], $_POST['contact_no'], $_POST['bricks_donated']);
         $stmt->execute();
         $stmt->close();
-
-        echo '<script>window.onload = function() { swal("Success!", "Donor added successfully!", "success"); };</script>';
-    }
-    // Handle editing donor
-    elseif ($action === 'edit') {
-        $donor_id = $_POST['donor_id'];
-        $donor_name = $_POST['donor_name'];
-        $address = $_POST['address'];
-        $country = $_POST['country'];
-        $contact_no = $_POST['contact_no']; // Change from full_name to contact_no
-        $bricks_donated = $_POST['bricks_donated'];
-
+        $_SESSION['alert'] = ['type' => 'success', 'message' => 'Donor added successfully!'];
+    } elseif ($action === 'edit') {
         $stmt = $conn->prepare("UPDATE donors SET donor_name = ?, address = ?, country = ?, Contact_No = ?, bricks_donated = ? WHERE id = ?");
-        $stmt->bind_param("sssiii", $donor_name, $address, $country, $contact_no, $bricks_donated, $donor_id);
+        $stmt->bind_param("sssiii", $_POST['donor_name'], $_POST['address'], $_POST['country'], $_POST['contact_no'], $_POST['bricks_donated'], $_POST['donor_id']);
         $stmt->execute();
         $stmt->close();
-
-        echo '<script>window.onload = function() { swal("Success!", "Donor updated successfully!", "success"); };</script>';
+        $_SESSION['alert'] = ['type' => 'success', 'message' => 'Donor updated successfully!'];
     }
 }
 
 if (isset($_GET['delete_id'])) {
-    $donor_id = $_GET['delete_id'];
-    
     $stmt = $conn->prepare("DELETE FROM donors WHERE id = ?");
-    $stmt->bind_param("i", $donor_id);
-    if ($stmt->execute()) {
-        echo '<script>
-            window.onload = function() { 
-                swal("Success!", "Donor deleted successfully!", "success")
-                .then(() => { window.location = "dashboard.php"; }); // Redirect after deletion
-            };
-        </script>';
-    } else {
-        // Show detailed error message for debugging
-        echo '<script>window.onload = function() { swal("Error!", "Failed to delete donor: ' . $stmt->error . '", "error"); };</script>';
-    }
+    $stmt->bind_param("i", $_GET['delete_id']);
+    $stmt->execute();
     $stmt->close();
+    $_SESSION['alert'] = ['type' => 'success', 'message' => 'Donor deleted successfully!'];
 }
+
+// Fetch dashboard data
+if (isset($_GET['fetch_cards'])) {
+    $result = $conn->query("SELECT COUNT(*) as donor_count, SUM(bricks_donated) as total_bricks FROM donors");
+    $data = $result->fetch_assoc();
+    $data['total_amount'] = $data['total_bricks'] * 1000;
+    $data['remaining_bricks'] = 100000 - $data['total_bricks'];
+    echo json_encode($data);
+    exit();
+}
+
+// Dashboard data for cards
+$result = $conn->query("SELECT COUNT(*) as donor_count, SUM(bricks_donated) as total_bricks FROM donors");
+$data = $result->fetch_assoc();
+$donor_count = $data['donor_count'] ?? 0;
+$total_bricks = $data['total_bricks'] ?? 0;
+$total_amount = $total_bricks * 1000;
+$remaining_bricks = 100000 - $total_bricks;
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -165,29 +146,32 @@ if (isset($_GET['delete_id'])) {
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <?php
-                    // Fetch and display donors from the database
-                    $result = $conn->query("SELECT * FROM donors");
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<tr>
-                            <td>{$row['donor_name']}</td>
-                            <td>{$row['address']}</td>
-                            <td>{$row['country']}</td>
-                            <td>{$row['Contact_No']}</td> <!-- Changed from full_name to Contact_No -->
-                            <td>{$row['bricks_donated']}</td>
-                            <td>
-                                <button class='editBtn' data-id='{$row['id']}' data-name='{$row['donor_name']}' data-address='{$row['address']}' data-country='{$row['country']}' data-contactno='{$row['Contact_No']}' data-bricks='{$row['bricks_donated']}'>
-                                    <i class='fas fa-edit'></i> Edit
-                                </button>
-                                <a href='?delete_id={$row['id']}' onclick='return confirm(\"Are you sure you want to delete this donor?\");' style='color: red;'>
-                                    <i class='fas fa-trash-alt'></i> Delete
-                                </a>
-                            </td>
-                        </tr>";
-                    }
-                    ?>
-                </tbody>
+               <?php
+
+            ?>
+            <tbody>
+                <?php
+                $result = $conn->query("SELECT * FROM donors");
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                        <td>{$row['donor_name']}</td>
+                        <td>{$row['address']}</td>
+                        <td>{$row['country']}</td>
+                        <td>{$row['Contact_No']}</td>
+                        <td>{$row['bricks_donated']}</td>
+                        <td>
+                            <button class='editBtn' data-id='{$row['id']}' data-name='{$row['donor_name']}' data-address='{$row['address']}' data-country='{$row['country']}' data-contactno='{$row['Contact_No']}' data-bricks='{$row['bricks_donated']}'>
+                                <i class='fas fa-edit'></i> Edit
+                            </button>
+                            <a href='?delete_id={$row['id']}' onclick='return confirm(\"Are you sure you want to delete this donor?\");' style='color: red;'>
+                                <i class='fas fa-trash-alt'></i> Delete
+                            </a>
+                        </td>
+                    </tr>";
+                }
+                ?>
+            </tbody>
+           
             </table>
         </div>
     </div>
@@ -247,6 +231,37 @@ if (isset($_GET['delete_id'])) {
             });
         });
     </script>
+
+<script>
+    // Script for clearing alerts and updating dashboard dynamically
+    if (performance.navigation.type === 1) {
+        <?php if (isset($_SESSION['alert_message'])) { ?>
+            <?php unset($_SESSION['alert_message']); ?>
+        <?php } ?>
+    }
+
+    function updateDashboard() {
+        $.ajax({
+            url: 'fetch_dashboard_data.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                $('.card:nth-child(1)').text('Donors: ' + data.donor_count);
+                $('.card:nth-child(2)').text('Total Bricks: ' + data.total_bricks);
+                $('.card:nth-child(3)').text('Total Amount Raised: Rs ' + data.total_amount);
+                $('.card:nth-child(4)').text('Bricks Left: ' + data.remaining_bricks);
+            },
+            error: function(xhr, status, error) {
+                console.error('Failed to fetch dashboard data:', error);
+            }
+        });
+    }
+
+    setInterval(updateDashboard, 30000);
+    $(document).ready(function() {
+        updateDashboard();
+    });
+</script>
 </body>
 </html>
 
